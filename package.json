@@ -1,6 +1,6 @@
 {
-  "name": "william",
-  "version": "0.0.1",
+  "name": "@guys/william",
+  "version": "0.1.0",
   "description": "A encapsulation of webpack config.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,9 @@
     "url": "https://github.com/Benjamin-Zh/william/issues"
   },
   "homepage": "https://github.com/Benjamin-Zh/william#readme",
-  "bin": "./bin/william.js",
+  "bin": {
+    "william": "./bin/william.js"
+  },
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
