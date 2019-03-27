@@ -43,11 +43,10 @@ module.exports = async (env = ENV.PRODUCTION) => {
     [ENV.PRODUCTION]: getProductionConfig,
   };
   const config = merge(
-    await getCommonConfig(options),
+    getCommonConfig(options),
     configGenerators[env](options),
+    options.webpackConfig,
   );
-
-  // todo: merge with william.rc's webpackConfig
 
   return options.measure
     ? new SpeedMeasurePlugin().wrap(config)

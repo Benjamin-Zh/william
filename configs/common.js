@@ -10,7 +10,7 @@ const setAlias = require('./lib/setAlias');
 const { JS_EXTENSIONS } = require('../constants');
 
 
-module.exports = async options => merge([
+module.exports = options => merge([
   setEntries({
     entries: options.entries,
   }),
