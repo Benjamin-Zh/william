@@ -1,6 +1,6 @@
 {
   "name": "@guys/william",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A encapsulation of webpack config.",
   "main": "index.js",
   "scripts": {
