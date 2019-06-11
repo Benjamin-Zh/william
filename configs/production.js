@@ -23,7 +23,6 @@ module.exports = options => merge([
     localIdentName: '[hash:base64:5]',
   }),
   loadImages({
-    minimize: true,
     fileOptions: {
       limit: 20000,
       outputPath: 'images',

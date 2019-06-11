@@ -1,4 +1,4 @@
-module.exports = ({ minimize = false, fileOptions = {}, minimizeOptions = {} } = {}) => {
+module.exports = ({ fileOptions = {} } = {}) => {
   const loaders = [{
     loader: 'url-loader',
     options: {
@@ -6,13 +6,6 @@ module.exports = ({ minimize = false, fileOptions = {}, minimizeOptions = {} } =
       fallback: 'file-loader',
     },
   }];
-
-  if (minimize) {
-    loaders.push({
-      loader: 'image-webpack-loader',
-      options: minimizeOptions,
-    });
-  }
 
   return {
     module: {
